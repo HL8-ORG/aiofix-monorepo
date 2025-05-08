@@ -1,0 +1,33 @@
+{
+  "name": "aiofix-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --port 8090",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "cz-config.cjs"
+    }
+  },
+  "volta": {
+    "node": "20.19.1",
+    "pnpm": "8.15.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.4.0",
+    "husky": "^8.0.0",
+    "vitepress": "^1.6.3"
+  }
+}
