@@ -7,10 +7,11 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "docs:dev": "vitepress dev docs --port 8090",
+    "docs:dev": "vitepress dev docs --port 8090 --host",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "pnpm -r typecheck"
   },
   "config": {
     "commitizen": {
@@ -28,6 +29,8 @@
     "commitizen": "^4.3.1",
     "cz-customizable": "^7.4.0",
     "husky": "^8.0.0",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "@biomejs/biome": "^1.5.3",
+    "typescript": "^5.3.3"
   }
 }
