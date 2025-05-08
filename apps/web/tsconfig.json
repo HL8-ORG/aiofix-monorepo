@@ -1,0 +1,22 @@
+{
+  "extends": "../../packages/tsconfig/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDirs": [".", "./.react-router/types"],
+    "types": [
+      "vite/client",
+      "node",
+    ],
+    "paths": {
+      "~/*": ["./app/*"],
+      "@workspace/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": [
+    ".react-router/types/**/*",
+    "app/**/*",
+    "app/**/.server/**/*",
+    "app/**/.client/**/*",
+  ],
+  "exclude": ["node_modules"]
+}
